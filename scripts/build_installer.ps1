@@ -1,4 +1,4 @@
-param(
+﻿param(
     [switch]$SkipAppBuild,
     [string]$PythonExe = "python"
 )
@@ -12,8 +12,9 @@ if (-not $SkipAppBuild) {
 
 $candidates = @(
     $env:ISCC_PATH,
-    "$env:ProgramFiles(x86)\Inno Setup 6\ISCC.exe",
-    "$env:ProgramFiles\Inno Setup 6\ISCC.exe"
+    "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe",
+    "$env:ProgramFiles\Inno Setup 6\ISCC.exe",
+    "C:\ProgramData\chocolatey\bin\ISCC.exe"
 ) | Where-Object { $_ -and (Test-Path $_) }
 if (-not $candidates) {
     throw "Inno Setup 6 compiler (ISCC.exe) was not found. Install Inno Setup 6 or set ISCC_PATH."
@@ -25,3 +26,5 @@ if ($LASTEXITCODE -ne 0) { throw "Inno Setup failed with exit code $LASTEXITCODE
 $Installer = Join-Path $Root "release\FutureEPWGenerator_Setup_v1.0.0.exe"
 if (-not (Test-Path $Installer)) { throw "Installer output missing: $Installer" }
 Write-Host "Installer ready: $Installer"
+
+
