@@ -1,4 +1,4 @@
-name: Windows Release
+﻿name: Windows Release
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
           cache: "pip"
       - name: Install Python dependencies
         shell: pwsh
@@ -56,3 +56,4 @@ jobs:
           files: |
             release/FutureEPWGenerator_Setup_v1.0.0.exe
             release/FutureEPWGenerator_Setup_v1.0.0.exe.sha256
+
