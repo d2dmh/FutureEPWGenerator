@@ -1,193 +1,202 @@
-# Future EPW Generator v1.0.0
+# Future EPW Generator
 
-A Windows desktop application for producing future EPW weather files from a validated baseline EPW and CMIP6 climate signals. **v1.0.0 is the first packaged-release milestone**: the validated v0.9.2.1 scientific workflow is preserved while Windows distribution is upgraded to a self-contained installer that does not require end users to install Python.
+**Generate research-ready future EPW weather files from a validated baseline EPW and CMIP6 climate projections.**
 
-## Download
+Future EPW Generator is a Windows desktop application that turns a baseline EnergyPlus Weather (`.epw`) file into validated future-weather files through a reproducible CMIP6 workflow. It is designed for building-energy simulation, climate-impact assessment, and research workflows where provenance, resumability, and output validation matter.
 
-Windows users should download `FutureEPWGenerator_Setup_v1.0.0.exe` from the repository **Releases** page. Source builds and the reproducible Windows packaging workflow are included in this repository.
+**Windows · Protocol R1 · CMIP6 · EnergyPlus EPW · PySide6**
 
-## Recommended Windows installation
+[Download v1.0.0](https://github.com/d2dmh/FutureEPWGenerator/releases/latest) · [Release notes](RELEASE_NOTES_v1.0.0.md) · [Build from source](WINDOWS_BUILD.md)
 
-Install `FutureEPWGenerator_Setup_v1.0.0.exe`, then launch **Future EPW Generator** from the Start Menu or optional desktop shortcut. The installed application bundles its Python/scientific runtime.
-
-The installer produced by the included build pipeline is currently **unsigned**, so Windows SmartScreen may display an unknown-publisher warning. See `WINDOWS_BUILD.md` for build details.
-
-For a local Windows build machine, double-click `BUILD_V1_INSTALLER.bat` (after installing Python 3.11 and Inno Setup 6), or follow `WINDOWS_BUILD.md`.
-
-## v1.0 runtime design
-
-The installed onedir distribution contains `FutureEPWGenerator.exe` for the GUI and `FutureEPWEngine.exe` as the background Stage 00–05 console runner. The split preserves real-time subprocess logs and Stage-02 worker isolation without exposing a command window during normal GUI use.
-
-## Core workflow
+## What it does
 
 ```text
-Target city + validated 8760-hour baseline EPW
+Validated baseline EPW
         ↓
-Project identity + baseline SHA-256
+Target city + project fingerprint
         ↓
-Climate selection
-  Reproducible Mode: 5 GCM × 3 SSP × 2040/2060
-  Advanced Mode: selected validated GCM/SSP/period subset
+CMIP6 climate selection
         ↓
-Stage 00 environment / baseline check
+Download / extract climate signals
         ↓
-Stage 01 selection-specific CMIP6 manifest
+Climate morphing
         ↓
-Stage 02 CMIP6 extraction (GCS → AWS fallback, resumable)
+Future EPW generation
         ↓
-Generation preflight
+Automated validation
         ↓
-Stage 03 climate factors
-        ↓
-Stage 04 future EPW generation
-        ↓
-Stage 05 validation
-        ↓
-PASS / PASS WITH WARNINGS / FAIL
+Research-ready EPW outputs
 ```
 
-## What is new in v0.9.2.1
+The application provides a GUI around the validated Stage 00–05 research workflow. It can acquire a recommended baseline EPW from the built-in Weather Library or use a local EPW, download the required CMIP6 variables with **GCS as the primary source and AWS as fallback**, resume interrupted data extraction, generate future EPWs, and run output checks before marking a project as complete.
 
-- Weather Library selection now uses **Search city + bounded result list + station detail + Use/Download button** instead of an editable long combo box.
-- The Project page is scrollable, so Weather Library results and Large text size cannot push controls on top of each other.
-- The Location card shows **City** and **Station** separately.
-- Older projects that persisted the EPW station name as the city now show the catalog city in the UI while preserving the original internal location/cache identity.
-- No scientific Stage 00–05 algorithm changed.
+## Interface preview
 
-## v0.9.2 feature set
+### Project setup and baseline weather
 
-### 1. Advanced Mode now controls the real workflow
+Search the built-in Weather Library, use a local EPW, and keep the target city separate from the actual weather station used as the baseline.
 
-The Climate page selection is now propagated through Stage 01–05 instead of only changing the displayed expected output count.
+![Future EPW Generator project setup](docs/images/project-setup.png)
+
+### CMIP6 data workflow
+
+The CMIP6 page shows the active asset count, resumable progress, cache state, selected data source, and fallback provenance. In Advanced Mode, the total is driven by the actual GCM/SSP selection rather than a fixed catalog size.
+
+![Future EPW Generator CMIP6 data workflow](docs/images/cmip6-data.png)
+
+## Quick start
+
+1. Download `FutureEPWGenerator_Setup_v1.0.0.exe` from [Releases](https://github.com/d2dmh/FutureEPWGenerator/releases/latest).
+2. Install and launch **Future EPW Generator**.
+3. Create a project and choose a baseline EPW from the Weather Library or from disk.
+4. Choose **Reproducible Mode** or a custom **Advanced Mode** selection.
+5. Download the required CMIP6 assets. Interrupted jobs can be resumed.
+6. Generate future EPWs.
+7. Review the Validation page and only use outputs that pass the project checks.
+
+> The v1.0.0 installer is currently unsigned, so Windows SmartScreen may display an unknown-publisher warning.
+
+## Scientific workflow
+
+```text
+Stage 00  Environment + baseline EPW checks
+   ↓
+Stage 01  Selection-specific CMIP6 manifest
+   ↓
+Stage 02  CMIP6 extraction
+          GCS primary → AWS fallback
+          resumable cache + city checkpoints
+   ↓
+Preflight  Project / baseline / selection consistency
+   ↓
+Stage 03  Climate-factor construction
+   ↓
+Stage 04  Future EPW generation
+   ↓
+Stage 05  Output validation
+```
+
+The historical reference period is **1985–2014**. The current Protocol R1 catalog uses ten monthly CMIP6 Amon variables and the existing validated BTWS/BWS morphing implementation.
+
+## Climate modes
+
+### Reproducible Mode
+
+The frozen R1 configuration uses:
+
+- **5 GCMs:** ACCESS-CM2, GFDL-ESM4, MPI-ESM1-2-HR, IPSL-CM6A-LR, FGOALS-g3
+- **3 scenarios:** SSP1-2.6, SSP2-4.5, SSP3-7.0
+- **2 target periods:** 2040 and 2060
+- **10 Amon variables**
+- **200 Stage-02 weather assets**
+- **36 generated EPWs** including ensemble-mean outputs
+
+### Advanced Mode
+
+Advanced Mode runs the same scientific workflow on a selected subset of GCMs, SSPs, and target periods.
 
 Stage-02 asset count is:
 
 ```text
-selected GCMs × (historical + selected SSPs) × 10 variables
+selected GCMs × (1 historical + selected SSPs) × 10 variables
 ```
 
-Examples:
-
-| Selection | Stage-02 assets | Expected EPWs* |
-|---|---:|---:|
-| 1 GCM + 1 SSP + 1 period | 20 | 2 |
-| 1 GCM + 2 SSP + 1 period | 30 | 4 |
-| 2 GCM + 2 SSP + 2 periods | 60 | 12 |
-| Reproducible Mode: 5 GCM + 3 SSP + 2 periods | 200 | 36 |
-
-\*One EPW per selected GCM plus one ensemble-mean EPW for each SSP × period combination.
-
-2040/2060 do not increase Stage-02 remote assets because they are cut from the same SSP time series after extraction.
-
-### 2. Reproducible Mode remains frozen
-
-Reproducible Mode still uses:
-
-- SSP1-2.6, SSP2-4.5, SSP3-7.0
-- 2040 and 2060 target windows
-- ACCESS-CM2, GFDL-ESM4, MPI-ESM1-2-HR, IPSL-CM6A-LR, FGOALS-g3
-- ten Amon variables
-- 200 Stage-02 weather assets
-- 36 future EPWs
-
-The validated BTWS/BWS morphing equations and variable transformations are unchanged.
-
-### 3. Baseline Weather Library
-
-The Project page now offers two baseline sources:
-
-- **Weather Library** — search a bundled catalog of 40 major-city recommended stations, then download/cache the selected TMYx EPW on demand.
-- **Local EPW** — browse any validated local 8760-hour EPW as before.
-
-The first catalog includes Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu, Wuhan, Hong Kong, Tokyo, Seoul, Singapore, Delhi, Bangkok, Kuala Lumpur, Jakarta, Manila, Kuwait City, Dubai, Riyadh, London, Paris, Berlin, Madrid, Rome, Amsterdam, Stockholm, Copenhagen, New York, Los Angeles, Chicago, San Francisco, Toronto, Vancouver, Mexico City, Miami, Houston, Sydney, Melbourne, São Paulo, Cairo and Johannesburg.
-
-Weather-library files are **not bundled inside the application ZIP**. The catalog metadata is bundled; EPWs are downloaded only when requested and cached in the user application-data directory. Once selected, the validated EPW is copied into the research project and fingerprinted, so future remote changes do not alter the project baseline.
-
-### 4. City and station are separate
-
-A project now keeps a canonical target city separately from the actual EPW station. For example:
+Expected EPW count is:
 
 ```text
-City:    Tokyo
-Station: Tokyo.Intl.AP-Haneda.AP
-WMO:     476710
+selected SSPs × selected periods × (selected GCMs + 1 ensemble mean)
 ```
 
-Known WMO stations in the bundled Weather Library also provide a canonical city suggestion when a local EPW is opened.
+For example, **1 GCM + 1 SSP + 1 period** requires **20 Stage-02 assets** and produces **2 EPWs**.
 
-### 5. Dynamic progress, ETA and preflight
+## Baseline Weather Library
 
-CMIP6 progress, resumable checkpoints, Remote Data Ready, ETA and generation preflight all use the **active manifest total**, not a hard-coded 200.
+The application includes a metadata catalog of recommended stations for major cities. Weather files are **not bundled with the application**; the selected TMYx EPW is downloaded on demand and cached locally.
 
-A Tokyo smoke-test selection of ACCESS-CM2 + SSP1-2.6 therefore shows:
+After selection, the baseline EPW is copied into the project workspace and fingerprinted with SHA-256. The project therefore keeps a stable baseline input even if the remote weather source changes later.
+
+Users can also browse and use any validated local 8760-hour EPW.
+
+## Reproducibility and provenance
+
+Future EPW Generator is designed to keep the generation chain auditable:
+
+- baseline EPW copied into the project and SHA-256 fingerprinted;
+- target city and weather station stored separately;
+- selection-specific CMIP6 manifest;
+- location-namespaced and resumable CMIP6 cache;
+- GCS/AWS fallback recorded in provenance;
+- compatible cache retained when Advanced Mode selections change;
+- stale derived outputs separated from the active selection;
+- Stage-05 validation checks generated EPWs before the project is marked complete.
+
+## Output validation
+
+The validation workflow checks the generated EPWs for items such as:
+
+- expected file count;
+- 8760 hourly records;
+- missing-value conditions;
+- physical-range checks;
+- target-period consistency;
+- baseline / generated-file integrity.
+
+The GUI reports the project result as **PASS**, **PASS WITH WARNINGS**, or **FAIL** based on the validation stage.
+
+## Data sources
+
+- **Baseline EPW:** local user file or Weather Library metadata linked to Climate.OneBuilding.org TMYx files.
+- **CMIP6 primary source:** Google Cloud Storage (GCS).
+- **CMIP6 fallback:** AWS-hosted mirror where supported by the existing R1 engine.
+
+Fallback use is recorded as part of project provenance rather than hidden from the user.
+
+## Windows installation
+
+Download the installer from the repository [Releases](https://github.com/d2dmh/FutureEPWGenerator/releases/latest):
 
 ```text
-0 / 20 → 20 / 20
+FutureEPWGenerator_Setup_v1.0.0.exe
 ```
 
-rather than `0 / 200`.
+The installed distribution contains:
 
-## Project safety and reproducibility
+```text
+FutureEPWGenerator.exe   GUI
+FutureEPWEngine.exe      Stage 00–05 background runner
+```
 
-- Existing Future EPW project folders are not silently overwritten.
-- Baseline EPWs are copied into `inputs/baseline_epw/` and SHA-256 fingerprinted.
-- CMIP6 cache is location namespaced and resumable across restarts.
-- Changing an Advanced Mode selection preserves compatible CMIP6 cache files.
-- Derived outputs from the previous selection are moved under `outputs/stale/<selection-fingerprint>/` rather than silently deleted or reported as current.
-- Project provenance records the active GCMs, SSPs, periods and selection-specific manifest metadata.
+End users do **not** need to install Python separately.
 
-## Settings
-
-The top-right Settings button provides:
-
-- English / 简体中文
-- Small / Standard / Large text size
-- Reopen last project automatically
-- Show detailed backend log by default
-
-Application settings are stored separately from research-project provenance.
-
-## Developer / source run
+## Development
 
 For development or scientific debugging from source:
 
 ```powershell
-python -m pip install -r requirements.txt
+python -m pip install -r requirements.txt -r requirements-dev.txt
 python app.py --self-test
+python -m pytest -q tests
 python app.py
 ```
 
-End users should prefer the v1.0 Windows installer. Developers can still use `run_app.bat` when Python is available on PATH.
-
-## Recommended Tokyo smoke test
-
-1. Create a new Tokyo project using the Weather Library or Tokyo Haneda local EPW.
-2. Select **Advanced Mode**.
-3. Select only `SSP1-2.6`, `2040`, and `ACCESS-CM2`.
-4. Save the Climate configuration.
-5. The CMIP6 page should report **20 assets**, not 200.
-6. Start extraction and verify the Tokyo location-specific cache progresses `0/20`, `1/20`, ... .
-7. Pause/reopen to verify resumability.
-8. Once complete, Stage 03–05 should expect **2 EPWs** and validate `2/2`.
-
-## Scientific scope
-
-v0.9.2/v0.9.2.1 change workflow **selection and orchestration**, not the scientific morphing equations. The historical reference remains 1985–2014 and the validated scenario/model catalog remains limited to the existing R1 set.
-
-The Weather Library is a convenience layer for acquiring a baseline EPW; the copied project baseline and its hash remain the reproducible scientific input.
+The current dependency set requires **Python 3.12** for the reproducible Windows release environment.
 
 ## Repository layout
 
 ```text
-app.py
+app.py                    Application entry point
 future_epw_demo/          GUI, project state, Weather Library, orchestration
 engine_core/              Stage 00–05 research engine
-assets/                   icons + Weather Library catalog
+assets/                   Application icons + Weather Library catalog
 packaging/                PyInstaller + Inno Setup definitions
 scripts/                  Windows build scripts
-.github/workflows/         Windows release automation
-tests/                    application + packaging regression tests
-docs/superpowers/         design specs and implementation plans
+.github/workflows/        Windows release automation
+tests/                    Application + packaging regression tests
+docs/images/              README interface screenshots
 ```
 
-See `RELEASE_NOTES_v1.0.0.md`, `WINDOWS_BUILD.md`, and `RELEASE_CHECKLIST_v1.0.0.md` for release-specific details.
+For release/build details, see [RELEASE_NOTES_v1.0.0.md](RELEASE_NOTES_v1.0.0.md), [WINDOWS_BUILD.md](WINDOWS_BUILD.md), and [RELEASE_CHECKLIST_v1.0.0.md](RELEASE_CHECKLIST_v1.0.0.md).
+
+## Citation
+
+Citation metadata is provided in [`CITATION.cff`](CITATION.cff).

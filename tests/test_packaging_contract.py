@@ -30,7 +30,7 @@ def test_windows_build_scripts_exist():
 def test_windows_release_workflow_contract():
     yml = read('.github/workflows/windows-release.yml')
     assert 'windows-latest' in yml
-    assert 'python-version: "3.11"' in yml or "python-version: '3.11'" in yml
+    assert 'python-version: "3.12"' in yml or "python-version: '3.12'" in yml
     assert 'build_windows.ps1' in yml
     assert 'build_installer.ps1' in yml
     assert 'FutureEPWGenerator_Setup_v1.0.0.exe' in yml

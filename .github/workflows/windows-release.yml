@@ -1,4 +1,4 @@
-﻿name: Windows Release
+name: Windows Release
 
 on:
   workflow_dispatch:
@@ -56,4 +56,3 @@ jobs:
           files: |
             release/FutureEPWGenerator_Setup_v1.0.0.exe
             release/FutureEPWGenerator_Setup_v1.0.0.exe.sha256
-

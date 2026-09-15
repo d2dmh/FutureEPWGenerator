@@ -5,7 +5,7 @@
 For a local build machine:
 
 - Windows 10/11 x64
-- Python 3.11 x64
+- Python 3.12 x64
 - Internet access for Python dependency installation
 - Inno Setup 6
 
