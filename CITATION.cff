@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+﻿cff-version: 1.2.0
 message: "If you use Future EPW Generator in research, please cite this software release and the associated scientific work."
 title: "Future EPW Generator"
 type: software
@@ -7,4 +7,5 @@ date-released: "2026-09-15"
 authors:
   - family-names: "Deng"
     given-names: "Minghao"
-repository-code: "https://github.com/d2dmh/Future-EPW-Generator"
+repository-code: "https://github.com/d2dmh/FutureEPWGenerator"
+
