@@ -1,0 +1,9 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+cache/cmip6_monthly/*.csv
+outputs/
+# For a public repository, keep hashes/metadata in inputs/baseline_epw_manifest.csv
+# and verify redistribution terms before committing third-party EPW files.
+inputs/baseline_epw/*.epw

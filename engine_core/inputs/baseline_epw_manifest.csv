@@ -1,0 +1,9 @@
+city,wmo,filename,latitude,longitude,time_zone,elevation_m,sha256,source_description
+Delhi,421820,IND_DL_New.Delhi-Safdarjung.AP.421820_TMYx.2009-2023.epw,28.5886,77.2222,5.5,214.9,8e645017522f78ab773afa8ea9df906a51cd30a3812f28f66026b3255844e2d7,Climate.OneBuilding.Org TMYx 2009-2023 station weather file
+Singapore,486980,SGP_SG_Singapore-Changi.Intl.AP.486980_TMYx.2009-2023.epw,1.3678,103.9826,8.0,6.7,7db0f29857464a7ac2afb35e1e6f70d17bc0916fc15436ce7879f73ce36f6c94,Climate.OneBuilding.Org TMYx 2009-2023 station weather file
+Kuwait City,405820,KWT_FA_Kuwait.Intl.AP.405820_TMYx.2009-2023.epw,29.227,47.969,3.0,62.8,1deb4adc3e46c8f1c17b449eb93bcd547cb181172b20dc10f0347210a9f58d76,Climate.OneBuilding.Org TMYx 2009-2023 station weather file
+Beijing,545110,CHN_BJ_Beijing-Capital.Intl.AP.545110_TMYx.2009-2023.epw,40.08,116.585,8.0,35.4,dba04a65350416942ccc119a9e8e9c0eb7f0380eb14bdc0a62afa80f0c17b142,Climate.OneBuilding.Org TMYx 2009-2023 station weather file
+London,037720,GBR_ENG_London-Heathrow.Intl.AP.037720_TMYx.2009-2023.epw,51.4792,-0.4506,0.0,25.3,2ae3b347890699acb2f7dce270c06fd53efffb3bf3e75eeae866f815b89191de,Climate.OneBuilding.Org TMYx 2009-2023 station weather file
+Sydney,947670,AUS_NSW_Mascot.AP-Sydney.Intl.AP.947670_TMYx.2009-2023.epw,-33.9464,151.1731,10.0,6.4,9ec675a432fb7730a8ff6a3a891ecf1b3f3d35f91eabcf9f8230363d07d079c6,Climate.OneBuilding.Org TMYx 2009-2023 station weather file
+Madrid,082210,ESP_MD_Madrid-Barajas-Suarez.AP.082210_TMYx.2009-2023.epw,40.467,-3.556,1.0,609.6,2137be4961ebe634fe6f09f392ec3a320dfefcff34b4152c155334574bf8ba16,Climate.OneBuilding.Org TMYx 2009-2023 station weather file
+Toronto,716240,CAN_ON_Toronto-Pearson.Intl.AP.716240_TMYx.2009-2023.epw,43.6658,-79.6062,-5.0,173.4,17110caaf92193d36bf559dacf27dbf1efa22b6bf60155e67ad1e12fb8e47a1a,Climate.OneBuilding.Org TMYx 2009-2023 station weather file

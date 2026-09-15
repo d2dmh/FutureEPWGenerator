@@ -1,0 +1,11 @@
+numpy==2.5.3
+pandas==3.0.5
+numexpr>=2.10.2
+xarray==2026.7.0
+scipy==1.18.1
+zarr==2.18.7
+gcsfs==2026.8.1
+s3fs==2026.7.0
+cftime==1.6.5
+fsspec==2026.7.0
+pytest==9.0.2

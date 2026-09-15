@@ -1,0 +1,14 @@
+{
+  "source_catalog_filename": "pangeo_cmip6_catalog.csv",
+  "source_catalog_sha256": "a1d8a719d923253e1b3282004328553532e654c168f36fdf4ff2d20b17fbbb45",
+  "subset_sha256": "721dc83ef23611ae6d7dfaf2ada987a77052fdb07256e6390ef4f701bb2e845e",
+  "main_assets": 200,
+  "sftlf_assets": 5,
+  "total_assets": 205,
+  "audit": {
+    "expected_assets": 200,
+    "actual_assets": 200,
+    "duplicate_keys": 0,
+    "passed": true
+  }
+}

@@ -1,0 +1,38 @@
+Future EPW Generator v1.0.0 release-engineering verification
+Date: 2026-09-15
+
+Application tests:
+- 123 passed
+- 1 skipped (PySide6/QProcess dynamic GUI test unavailable in Linux packaging environment)
+- 0 failed
+
+Application self-test:
+- PASS
+
+Python compileall:
+- PASS
+
+Packaging definition syntax:
+- PyInstaller spec: PASS
+- Windows version resource: PASS
+
+Scientific engine tests (run per file because the combined suite exceeds the harness timeout):
+- test_catalog_workflow.py: 5 passed
+- test_cli_stages.py: 20 passed
+- test_cmip6_io.py: 14 passed
+- test_coastal_sensitivity.py: 10 passed
+- test_epw_morphing.py: 5 passed
+- test_factors.py: 5 passed
+- test_land_fraction.py: 4 passed
+- test_pause_support.py: 1 passed
+- test_requirements.py: 2 passed
+- Total: 66 passed, 0 failed
+
+Frozen-runtime regression:
+- bundle resource path tests: PASS
+- GUI -> FutureEPWEngine stage command tests: PASS
+- Stage-02 frozen worker re-entry command test: PASS
+
+Important environment boundary:
+- This Linux execution environment cannot create or execute a Windows PyInstaller/Inno Setup binary.
+- The included Windows build scripts and GitHub Actions workflow perform the real Windows build and run a frozen FutureEPWEngine.exe --self-test before producing the installer.

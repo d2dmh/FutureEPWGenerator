@@ -1,0 +1,823 @@
+[
+  {
+    "id": "CHN_Beijing_545110_TMYx_2009-2023",
+    "city": "Beijing",
+    "country": "China",
+    "country_code": "CHN",
+    "region": "Beijing",
+    "station": "Beijing Capital Intl AP",
+    "wmo": "545110",
+    "latitude": 40.08,
+    "longitude": 116.585,
+    "elevation_m": 35.4,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/CHN_China/index.html",
+    "preferred_epw_name": "CHN_Beijing_Beijing_Capital_Intl_AP.545110_TMYx.2009-2023.epw",
+    "aliases": [
+      "北京"
+    ]
+  },
+  {
+    "id": "CHN_Shanghai_583670_TMYx_2009-2023",
+    "city": "Shanghai",
+    "country": "China",
+    "country_code": "CHN",
+    "region": "Shanghai",
+    "station": "Shanghai Hongqiao Intl AP",
+    "wmo": "583670",
+    "latitude": 31.1981,
+    "longitude": 121.3363,
+    "elevation_m": 3.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/CHN_China/index.html",
+    "preferred_epw_name": "CHN_Shanghai_Shanghai_Hongqiao_Intl_AP.583670_TMYx.2009-2023.epw",
+    "aliases": [
+      "上海"
+    ]
+  },
+  {
+    "id": "CHN_Guangzhou_592870_TMYx_2009-2023",
+    "city": "Guangzhou",
+    "country": "China",
+    "country_code": "CHN",
+    "region": "Guangdong",
+    "station": "Guangzhou Baiyun Intl AP",
+    "wmo": "592870",
+    "latitude": 23.3924,
+    "longitude": 113.2988,
+    "elevation_m": 15.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/CHN_China/index.html",
+    "preferred_epw_name": "CHN_Guangdong_Guangzhou_Baiyun_Intl_AP.592870_TMYx.2009-2023.epw",
+    "aliases": [
+      "广州"
+    ]
+  },
+  {
+    "id": "CHN_Shenzhen_594930_TMYx_2009-2023",
+    "city": "Shenzhen",
+    "country": "China",
+    "country_code": "CHN",
+    "region": "Guangdong",
+    "station": "Shenzhen Baoan Intl AP",
+    "wmo": "594930",
+    "latitude": 22.6393,
+    "longitude": 113.8107,
+    "elevation_m": 4.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/CHN_China/index.html",
+    "preferred_epw_name": "CHN_Guangdong_Shenzhen_Baoan_Intl_AP.594930_TMYx.2009-2023.epw",
+    "aliases": [
+      "深圳"
+    ]
+  },
+  {
+    "id": "CHN_Chengdu_562940_TMYx_2009-2023",
+    "city": "Chengdu",
+    "country": "China",
+    "country_code": "CHN",
+    "region": "Sichuan",
+    "station": "Chengdu Shuangliu Intl AP",
+    "wmo": "562940",
+    "latitude": 30.5785,
+    "longitude": 103.9471,
+    "elevation_m": 495.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/CHN_China/index.html",
+    "preferred_epw_name": "CHN_Sichuan_Chengdu_Shuangliu_Intl_AP.562940_TMYx.2009-2023.epw",
+    "aliases": [
+      "成都"
+    ]
+  },
+  {
+    "id": "CHN_Wuhan_574940_TMYx_2009-2023",
+    "city": "Wuhan",
+    "country": "China",
+    "country_code": "CHN",
+    "region": "Hubei",
+    "station": "Wuhan Tianhe Intl AP",
+    "wmo": "574940",
+    "latitude": 30.7838,
+    "longitude": 114.2081,
+    "elevation_m": 34.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/CHN_China/index.html",
+    "preferred_epw_name": "CHN_Hubei_Wuhan_Tianhe_Intl_AP.574940_TMYx.2009-2023.epw",
+    "aliases": [
+      "武汉"
+    ]
+  },
+  {
+    "id": "HKG_Hong_Kong_450070_TMYx_2009-2023",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "country_code": "HKG",
+    "region": "Hong Kong",
+    "station": "Hong Kong Intl AP",
+    "wmo": "450070",
+    "latitude": 22.3089,
+    "longitude": 113.9146,
+    "elevation_m": 9.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/HKG_Hong_Kong/index.html",
+    "preferred_epw_name": "HKG_Hong_Kong_Hong_Kong_Intl_AP.450070_TMYx.2009-2023.epw",
+    "aliases": [
+      "香港"
+    ]
+  },
+  {
+    "id": "JPN_Tokyo_476710_TMYx_2009-2023",
+    "city": "Tokyo",
+    "country": "Japan",
+    "country_code": "JPN",
+    "region": "Tokyo",
+    "station": "Tokyo Intl AP - Haneda",
+    "wmo": "476710",
+    "latitude": 35.5533,
+    "longitude": 139.7811,
+    "elevation_m": 10.7,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/JPN_Japan/TK_Tokyo/JPN_TK_Tokyo.Intl.AP-Haneda.AP.476710_TMYx.2009-2023.zip",
+    "preferred_epw_name": "JPN_Tokyo_Tokyo_Intl_AP_-_Haneda.476710_TMYx.2009-2023.epw",
+    "aliases": [
+      "东京",
+      "東京",
+      "Haneda",
+      "羽田"
+    ]
+  },
+  {
+    "id": "KOR_Seoul_471100_TMYx_2009-2023",
+    "city": "Seoul",
+    "country": "South Korea",
+    "country_code": "KOR",
+    "region": "Seoul",
+    "station": "Seoul Gimpo Intl AP",
+    "wmo": "471100",
+    "latitude": 37.5583,
+    "longitude": 126.7906,
+    "elevation_m": 18.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/KOR_South_Korea/index.html",
+    "preferred_epw_name": "KOR_Seoul_Seoul_Gimpo_Intl_AP.471100_TMYx.2009-2023.epw",
+    "aliases": [
+      "首尔",
+      "서울"
+    ]
+  },
+  {
+    "id": "SGP_Singapore_486980_TMYx_2009-2023",
+    "city": "Singapore",
+    "country": "Singapore",
+    "country_code": "SGP",
+    "region": "Singapore",
+    "station": "Singapore Changi Intl AP",
+    "wmo": "486980",
+    "latitude": 1.3678,
+    "longitude": 103.9826,
+    "elevation_m": 6.7,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_5_Southwest_Pacific/SGP_Singapore/SGP_SG_Singapore-Changi.Intl.AP.486980_TMYx.2009-2023.zip",
+    "preferred_epw_name": "SGP_Singapore_Singapore_Changi_Intl_AP.486980_TMYx.2009-2023.epw",
+    "aliases": [
+      "新加坡",
+      "Changi"
+    ]
+  },
+  {
+    "id": "IND_Delhi_421820_TMYx_2009-2023",
+    "city": "Delhi",
+    "country": "India",
+    "country_code": "IND",
+    "region": "Delhi",
+    "station": "New Delhi Safdarjung",
+    "wmo": "421820",
+    "latitude": 28.5833,
+    "longitude": 77.2,
+    "elevation_m": 216.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/IND_India/index.html",
+    "preferred_epw_name": "IND_Delhi_New_Delhi_Safdarjung.421820_TMYx.2009-2023.epw",
+    "aliases": [
+      "New Delhi",
+      "德里"
+    ]
+  },
+  {
+    "id": "THA_Bangkok_484560_TMYx_2009-2023",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "country_code": "THA",
+    "region": "Bangkok",
+    "station": "Bangkok Don Mueang Intl AP",
+    "wmo": "484560",
+    "latitude": 13.9126,
+    "longitude": 100.6068,
+    "elevation_m": 4.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/THA_Thailand/index.html",
+    "preferred_epw_name": "THA_Bangkok_Bangkok_Don_Mueang_Intl_AP.484560_TMYx.2009-2023.epw",
+    "aliases": [
+      "曼谷"
+    ]
+  },
+  {
+    "id": "MYS_Kuala_Lumpur_486500_TMYx_2009-2023",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "country_code": "MYS",
+    "region": "Selangor",
+    "station": "Kuala Lumpur Intl AP",
+    "wmo": "486500",
+    "latitude": 2.7456,
+    "longitude": 101.7072,
+    "elevation_m": 21.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_5_Southwest_Pacific/MYS_Malaysia/index.html",
+    "preferred_epw_name": "MYS_Selangor_Kuala_Lumpur_Intl_AP.486500_TMYx.2009-2023.epw",
+    "aliases": [
+      "吉隆坡"
+    ]
+  },
+  {
+    "id": "IDN_Jakarta_967490_TMYx_2009-2023",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "country_code": "IDN",
+    "region": "Jakarta",
+    "station": "Jakarta Soekarno-Hatta Intl AP",
+    "wmo": "967490",
+    "latitude": -6.1256,
+    "longitude": 106.6559,
+    "elevation_m": 10.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_5_Southwest_Pacific/IDN_Indonesia/index.html",
+    "preferred_epw_name": "IDN_Jakarta_Jakarta_Soekarno-Hatta_Intl_AP.967490_TMYx.2009-2023.epw",
+    "aliases": [
+      "雅加达"
+    ]
+  },
+  {
+    "id": "PHL_Manila_984290_TMYx_2009-2023",
+    "city": "Manila",
+    "country": "Philippines",
+    "country_code": "PHL",
+    "region": "Manila",
+    "station": "Manila Ninoy Aquino Intl AP",
+    "wmo": "984290",
+    "latitude": 14.5086,
+    "longitude": 121.0198,
+    "elevation_m": 23.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_5_Southwest_Pacific/PHL_Philippines/index.html",
+    "preferred_epw_name": "PHL_Manila_Manila_Ninoy_Aquino_Intl_AP.984290_TMYx.2009-2023.epw",
+    "aliases": [
+      "马尼拉"
+    ]
+  },
+  {
+    "id": "KWT_Kuwait_City_405820_TMYx_2009-2023",
+    "city": "Kuwait City",
+    "country": "Kuwait",
+    "country_code": "KWT",
+    "region": "Al Asimah",
+    "station": "Kuwait Intl AP",
+    "wmo": "405820",
+    "latitude": 29.227,
+    "longitude": 47.969,
+    "elevation_m": 63.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/KWT_Kuwait/index.html",
+    "preferred_epw_name": "KWT_Al_Asimah_Kuwait_Intl_AP.405820_TMYx.2009-2023.epw",
+    "aliases": [
+      "科威特"
+    ]
+  },
+  {
+    "id": "ARE_Dubai_411940_TMYx_2009-2023",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "country_code": "ARE",
+    "region": "Dubai",
+    "station": "Dubai Intl AP",
+    "wmo": "411940",
+    "latitude": 25.2528,
+    "longitude": 55.3644,
+    "elevation_m": 19.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/ARE_United_Arab_Emirates/index.html",
+    "preferred_epw_name": "ARE_Dubai_Dubai_Intl_AP.411940_TMYx.2009-2023.epw",
+    "aliases": [
+      "迪拜"
+    ]
+  },
+  {
+    "id": "SAU_Riyadh_404380_TMYx_2009-2023",
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "country_code": "SAU",
+    "region": "Riyadh",
+    "station": "Riyadh King Khaled Intl AP",
+    "wmo": "404380",
+    "latitude": 24.9576,
+    "longitude": 46.6988,
+    "elevation_m": 625.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_2_Asia/SAU_Saudi_Arabia/index.html",
+    "preferred_epw_name": "SAU_Riyadh_Riyadh_King_Khaled_Intl_AP.404380_TMYx.2009-2023.epw",
+    "aliases": [
+      "利雅得"
+    ]
+  },
+  {
+    "id": "GBR_London_037720_TMYx_2009-2023",
+    "city": "London",
+    "country": "United Kingdom",
+    "country_code": "GBR",
+    "region": "England",
+    "station": "London Heathrow AP",
+    "wmo": "037720",
+    "latitude": 51.4792,
+    "longitude": -0.4506,
+    "elevation_m": 25.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_6_Europe/GBR_United_Kingdom/index.html",
+    "preferred_epw_name": "GBR_England_London_Heathrow_AP.037720_TMYx.2009-2023.epw",
+    "aliases": [
+      "伦敦",
+      "Heathrow"
+    ]
+  },
+  {
+    "id": "FRA_Paris_071490_TMYx_2009-2023",
+    "city": "Paris",
+    "country": "France",
+    "country_code": "FRA",
+    "region": "Ile-de-France",
+    "station": "Paris Orly AP",
+    "wmo": "071490",
+    "latitude": 48.7262,
+    "longitude": 2.3652,
+    "elevation_m": 89.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_6_Europe/FRA_France/index.html",
+    "preferred_epw_name": "FRA_Ile-de-France_Paris_Orly_AP.071490_TMYx.2009-2023.epw",
+    "aliases": [
+      "巴黎",
+      "Orly"
+    ]
+  },
+  {
+    "id": "DEU_Berlin_103850_TMYx_2009-2023",
+    "city": "Berlin",
+    "country": "Germany",
+    "country_code": "DEU",
+    "region": "Berlin",
+    "station": "Berlin Brandenburg AP",
+    "wmo": "103850",
+    "latitude": 52.3622,
+    "longitude": 13.5006,
+    "elevation_m": 47.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_6_Europe/DEU_Germany/index.html",
+    "preferred_epw_name": "DEU_Berlin_Berlin_Brandenburg_AP.103850_TMYx.2009-2023.epw",
+    "aliases": [
+      "柏林"
+    ]
+  },
+  {
+    "id": "ESP_Madrid_082210_TMYx_2009-2023",
+    "city": "Madrid",
+    "country": "Spain",
+    "country_code": "ESP",
+    "region": "Madrid",
+    "station": "Madrid Barajas AP",
+    "wmo": "082210",
+    "latitude": 40.467,
+    "longitude": -3.556,
+    "elevation_m": 609.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_6_Europe/ESP_Spain/index.html",
+    "preferred_epw_name": "ESP_Madrid_Madrid_Barajas_AP.082210_TMYx.2009-2023.epw",
+    "aliases": [
+      "马德里",
+      "Barajas"
+    ]
+  },
+  {
+    "id": "ITA_Rome_162420_TMYx_2009-2023",
+    "city": "Rome",
+    "country": "Italy",
+    "country_code": "ITA",
+    "region": "Lazio",
+    "station": "Rome Fiumicino AP",
+    "wmo": "162420",
+    "latitude": 41.8003,
+    "longitude": 12.2389,
+    "elevation_m": 3.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_6_Europe/ITA_Italy/index.html",
+    "preferred_epw_name": "ITA_Lazio_Rome_Fiumicino_AP.162420_TMYx.2009-2023.epw",
+    "aliases": [
+      "罗马",
+      "Fiumicino"
+    ]
+  },
+  {
+    "id": "NLD_Amsterdam_062400_TMYx_2009-2023",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "country_code": "NLD",
+    "region": "North Holland",
+    "station": "Amsterdam Schiphol AP",
+    "wmo": "062400",
+    "latitude": 52.3086,
+    "longitude": 4.7639,
+    "elevation_m": -3.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_6_Europe/NLD_Netherlands/index.html",
+    "preferred_epw_name": "NLD_North_Holland_Amsterdam_Schiphol_AP.062400_TMYx.2009-2023.epw",
+    "aliases": [
+      "阿姆斯特丹",
+      "Schiphol"
+    ]
+  },
+  {
+    "id": "SWE_Stockholm_024600_TMYx_2009-2023",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "country_code": "SWE",
+    "region": "Stockholm",
+    "station": "Stockholm Arlanda AP",
+    "wmo": "024600",
+    "latitude": 59.6519,
+    "longitude": 17.9186,
+    "elevation_m": 42.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_6_Europe/SWE_Sweden/index.html",
+    "preferred_epw_name": "SWE_Stockholm_Stockholm_Arlanda_AP.024600_TMYx.2009-2023.epw",
+    "aliases": [
+      "斯德哥尔摩",
+      "Arlanda"
+    ]
+  },
+  {
+    "id": "DNK_Copenhagen_061800_TMYx_2009-2023",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "country_code": "DNK",
+    "region": "Capital Region",
+    "station": "Copenhagen Kastrup AP",
+    "wmo": "061800",
+    "latitude": 55.6179,
+    "longitude": 12.656,
+    "elevation_m": 5.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_6_Europe/DNK_Denmark/index.html",
+    "preferred_epw_name": "DNK_Capital_Region_Copenhagen_Kastrup_AP.061800_TMYx.2009-2023.epw",
+    "aliases": [
+      "哥本哈根",
+      "Kastrup"
+    ]
+  },
+  {
+    "id": "USA_New_York_744860_TMYx_2009-2023",
+    "city": "New York",
+    "country": "United States",
+    "country_code": "USA",
+    "region": "New York",
+    "station": "New York JFK Intl AP",
+    "wmo": "744860",
+    "latitude": 40.6398,
+    "longitude": -73.7789,
+    "elevation_m": 4.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_4_North_and_Central_America/USA_United_States_of_America/index.html",
+    "preferred_epw_name": "USA_New_York_New_York_JFK_Intl_AP.744860_TMYx.2009-2023.epw",
+    "aliases": [
+      "纽约",
+      "JFK"
+    ]
+  },
+  {
+    "id": "USA_Los_Angeles_722950_TMYx_2009-2023",
+    "city": "Los Angeles",
+    "country": "United States",
+    "country_code": "USA",
+    "region": "California",
+    "station": "Los Angeles Intl AP",
+    "wmo": "722950",
+    "latitude": 33.9425,
+    "longitude": -118.4081,
+    "elevation_m": 38.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_4_North_and_Central_America/USA_United_States_of_America/index.html",
+    "preferred_epw_name": "USA_California_Los_Angeles_Intl_AP.722950_TMYx.2009-2023.epw",
+    "aliases": [
+      "洛杉矶",
+      "LAX"
+    ]
+  },
+  {
+    "id": "USA_Chicago_725300_TMYx_2009-2023",
+    "city": "Chicago",
+    "country": "United States",
+    "country_code": "USA",
+    "region": "Illinois",
+    "station": "Chicago OHare Intl AP",
+    "wmo": "725300",
+    "latitude": 41.9786,
+    "longitude": -87.9048,
+    "elevation_m": 204.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_4_North_and_Central_America/USA_United_States_of_America/index.html",
+    "preferred_epw_name": "USA_Illinois_Chicago_OHare_Intl_AP.725300_TMYx.2009-2023.epw",
+    "aliases": [
+      "芝加哥",
+      "OHare"
+    ]
+  },
+  {
+    "id": "USA_San_Francisco_724940_TMYx_2009-2023",
+    "city": "San Francisco",
+    "country": "United States",
+    "country_code": "USA",
+    "region": "California",
+    "station": "San Francisco Intl AP",
+    "wmo": "724940",
+    "latitude": 37.619,
+    "longitude": -122.3748,
+    "elevation_m": 3.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_4_North_and_Central_America/USA_United_States_of_America/index.html",
+    "preferred_epw_name": "USA_California_San_Francisco_Intl_AP.724940_TMYx.2009-2023.epw",
+    "aliases": [
+      "旧金山",
+      "SFO"
+    ]
+  },
+  {
+    "id": "CAN_Toronto_716240_TMYx_2009-2023",
+    "city": "Toronto",
+    "country": "Canada",
+    "country_code": "CAN",
+    "region": "Ontario",
+    "station": "Toronto Pearson Intl AP",
+    "wmo": "716240",
+    "latitude": 43.6658,
+    "longitude": -79.6062,
+    "elevation_m": 173.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_4_North_and_Central_America/CAN_Canada/index.html",
+    "preferred_epw_name": "CAN_Ontario_Toronto_Pearson_Intl_AP.716240_TMYx.2009-2023.epw",
+    "aliases": [
+      "多伦多",
+      "Pearson"
+    ]
+  },
+  {
+    "id": "CAN_Vancouver_718920_TMYx_2009-2023",
+    "city": "Vancouver",
+    "country": "Canada",
+    "country_code": "CAN",
+    "region": "British Columbia",
+    "station": "Vancouver Intl AP",
+    "wmo": "718920",
+    "latitude": 49.1947,
+    "longitude": -123.1839,
+    "elevation_m": 4.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_4_North_and_Central_America/CAN_Canada/index.html",
+    "preferred_epw_name": "CAN_British_Columbia_Vancouver_Intl_AP.718920_TMYx.2009-2023.epw",
+    "aliases": [
+      "温哥华"
+    ]
+  },
+  {
+    "id": "MEX_Mexico_City_766790_TMYx_2009-2023",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "country_code": "MEX",
+    "region": "Mexico City",
+    "station": "Mexico City Intl AP",
+    "wmo": "766790",
+    "latitude": 19.4363,
+    "longitude": -99.0721,
+    "elevation_m": 2230.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_4_North_and_Central_America/MEX_Mexico/index.html",
+    "preferred_epw_name": "MEX_Mexico_City_Mexico_City_Intl_AP.766790_TMYx.2009-2023.epw",
+    "aliases": [
+      "墨西哥城"
+    ]
+  },
+  {
+    "id": "USA_Miami_722020_TMYx_2009-2023",
+    "city": "Miami",
+    "country": "United States",
+    "country_code": "USA",
+    "region": "Florida",
+    "station": "Miami Intl AP",
+    "wmo": "722020",
+    "latitude": 25.7959,
+    "longitude": -80.287,
+    "elevation_m": 3.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_4_North_and_Central_America/USA_United_States_of_America/index.html",
+    "preferred_epw_name": "USA_Florida_Miami_Intl_AP.722020_TMYx.2009-2023.epw",
+    "aliases": [
+      "迈阿密"
+    ]
+  },
+  {
+    "id": "USA_Houston_722430_TMYx_2009-2023",
+    "city": "Houston",
+    "country": "United States",
+    "country_code": "USA",
+    "region": "Texas",
+    "station": "Houston Intercontinental AP",
+    "wmo": "722430",
+    "latitude": 29.9844,
+    "longitude": -95.3414,
+    "elevation_m": 30.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_4_North_and_Central_America/USA_United_States_of_America/index.html",
+    "preferred_epw_name": "USA_Texas_Houston_Intercontinental_AP.722430_TMYx.2009-2023.epw",
+    "aliases": [
+      "休斯敦",
+      "Houston"
+    ]
+  },
+  {
+    "id": "AUS_Sydney_947670_TMYx_2009-2023",
+    "city": "Sydney",
+    "country": "Australia",
+    "country_code": "AUS",
+    "region": "New South Wales",
+    "station": "Sydney Kingsford Smith Intl AP",
+    "wmo": "947670",
+    "latitude": -33.9464,
+    "longitude": 151.1731,
+    "elevation_m": 6.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_5_Southwest_Pacific/AUS_Australia/index.html",
+    "preferred_epw_name": "AUS_New_South_Wales_Sydney_Kingsford_Smith_Intl_AP.947670_TMYx.2009-2023.epw",
+    "aliases": [
+      "悉尼"
+    ]
+  },
+  {
+    "id": "AUS_Melbourne_948660_TMYx_2009-2023",
+    "city": "Melbourne",
+    "country": "Australia",
+    "country_code": "AUS",
+    "region": "Victoria",
+    "station": "Melbourne Intl AP",
+    "wmo": "948660",
+    "latitude": -37.6733,
+    "longitude": 144.8433,
+    "elevation_m": 132.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_5_Southwest_Pacific/AUS_Australia/index.html",
+    "preferred_epw_name": "AUS_Victoria_Melbourne_Intl_AP.948660_TMYx.2009-2023.epw",
+    "aliases": [
+      "墨尔本"
+    ]
+  },
+  {
+    "id": "BRA_São_Paulo_837460_TMYx_2009-2023",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "country_code": "BRA",
+    "region": "Sao Paulo",
+    "station": "Sao Paulo Guarulhos Intl AP",
+    "wmo": "837460",
+    "latitude": -23.4356,
+    "longitude": -46.4731,
+    "elevation_m": 750.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_3_South_America/BRA_Brazil/index.html",
+    "preferred_epw_name": "BRA_Sao_Paulo_Sao_Paulo_Guarulhos_Intl_AP.837460_TMYx.2009-2023.epw",
+    "aliases": [
+      "Sao Paulo",
+      "圣保罗"
+    ]
+  },
+  {
+    "id": "EGY_Cairo_623660_TMYx_2009-2023",
+    "city": "Cairo",
+    "country": "Egypt",
+    "country_code": "EGY",
+    "region": "Cairo",
+    "station": "Cairo Intl AP",
+    "wmo": "623660",
+    "latitude": 30.1219,
+    "longitude": 31.4056,
+    "elevation_m": 74.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_1_Africa/EGY_Egypt/index.html",
+    "preferred_epw_name": "EGY_Cairo_Cairo_Intl_AP.623660_TMYx.2009-2023.epw",
+    "aliases": [
+      "开罗"
+    ]
+  },
+  {
+    "id": "ZAF_Johannesburg_683680_TMYx_2009-2023",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "country_code": "ZAF",
+    "region": "Gauteng",
+    "station": "Johannesburg OR Tambo Intl AP",
+    "wmo": "683680",
+    "latitude": -26.1392,
+    "longitude": 28.246,
+    "elevation_m": 1694.0,
+    "dataset": "TMYx",
+    "period": "2009-2023",
+    "source": "Climate.OneBuilding.org",
+    "download_url": "https://climate.onebuilding.org/WMO_Region_1_Africa/ZAF_South_Africa/index.html",
+    "preferred_epw_name": "ZAF_Gauteng_Johannesburg_OR_Tambo_Intl_AP.683680_TMYx.2009-2023.epw",
+    "aliases": [
+      "约翰内斯堡",
+      "OR Tambo"
+    ]
+  }
+]

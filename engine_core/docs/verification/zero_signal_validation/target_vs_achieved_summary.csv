@@ -1,0 +1,81 @@
+stage,city,scenario,target_label,model,ensemble_stat,factor,max_abs_error,mean_abs_error,n_months
+post_serialization,Beijing,ssp245,2040,ACCESS-CM2,,d_clt,0.0,0.0,12
+post_serialization,Beijing,ssp245,2040,ACCESS-CM2,,d_psl_pa,0.0,0.0,12
+post_serialization,Beijing,ssp245,2040,ACCESS-CM2,,d_rlds,0.0,0.0,12
+post_serialization,Beijing,ssp245,2040,ACCESS-CM2,,d_rsds,0.0,0.0,12
+post_serialization,Beijing,ssp245,2040,ACCESS-CM2,,d_tas,0.0,0.0,12
+post_serialization,Beijing,ssp245,2040,ACCESS-CM2,,d_tasmax,0.0,0.0,12
+post_serialization,Beijing,ssp245,2040,ACCESS-CM2,,d_tasmin,0.0,0.0,12
+post_serialization,Beijing,ssp245,2040,ACCESS-CM2,,r_huss,0.0,0.0,12
+post_serialization,Beijing,ssp245,2040,ACCESS-CM2,,r_pr,0.0,0.0,12
+post_serialization,Beijing,ssp245,2040,ACCESS-CM2,,r_wind,0.0,0.0,12
+post_serialization,Delhi,ssp245,2040,ACCESS-CM2,,d_clt,0.0,0.0,12
+post_serialization,Delhi,ssp245,2040,ACCESS-CM2,,d_psl_pa,0.0,0.0,12
+post_serialization,Delhi,ssp245,2040,ACCESS-CM2,,d_rlds,0.0,0.0,12
+post_serialization,Delhi,ssp245,2040,ACCESS-CM2,,d_rsds,0.0,0.0,12
+post_serialization,Delhi,ssp245,2040,ACCESS-CM2,,d_tas,0.0,0.0,12
+post_serialization,Delhi,ssp245,2040,ACCESS-CM2,,d_tasmax,0.0,0.0,12
+post_serialization,Delhi,ssp245,2040,ACCESS-CM2,,d_tasmin,0.0,0.0,12
+post_serialization,Delhi,ssp245,2040,ACCESS-CM2,,r_huss,0.0,0.0,12
+post_serialization,Delhi,ssp245,2040,ACCESS-CM2,,r_pr,0.0,0.0,12
+post_serialization,Delhi,ssp245,2040,ACCESS-CM2,,r_wind,0.0,0.0,12
+post_serialization,Kuwait City,ssp245,2040,ACCESS-CM2,,d_clt,0.0,0.0,12
+post_serialization,Kuwait City,ssp245,2040,ACCESS-CM2,,d_psl_pa,0.0,0.0,12
+post_serialization,Kuwait City,ssp245,2040,ACCESS-CM2,,d_rlds,0.0,0.0,12
+post_serialization,Kuwait City,ssp245,2040,ACCESS-CM2,,d_rsds,0.0,0.0,12
+post_serialization,Kuwait City,ssp245,2040,ACCESS-CM2,,d_tas,0.0,0.0,12
+post_serialization,Kuwait City,ssp245,2040,ACCESS-CM2,,d_tasmax,0.0,0.0,12
+post_serialization,Kuwait City,ssp245,2040,ACCESS-CM2,,d_tasmin,0.0,0.0,12
+post_serialization,Kuwait City,ssp245,2040,ACCESS-CM2,,r_huss,0.0,0.0,12
+post_serialization,Kuwait City,ssp245,2040,ACCESS-CM2,,r_pr,0.0,0.0,12
+post_serialization,Kuwait City,ssp245,2040,ACCESS-CM2,,r_wind,0.0,0.0,12
+post_serialization,London,ssp245,2040,ACCESS-CM2,,d_clt,0.0,0.0,12
+post_serialization,London,ssp245,2040,ACCESS-CM2,,d_psl_pa,0.0,0.0,12
+post_serialization,London,ssp245,2040,ACCESS-CM2,,d_rlds,0.0,0.0,12
+post_serialization,London,ssp245,2040,ACCESS-CM2,,d_rsds,0.0,0.0,12
+post_serialization,London,ssp245,2040,ACCESS-CM2,,d_tas,0.0,0.0,12
+post_serialization,London,ssp245,2040,ACCESS-CM2,,d_tasmax,0.0,0.0,12
+post_serialization,London,ssp245,2040,ACCESS-CM2,,d_tasmin,0.0,0.0,12
+post_serialization,London,ssp245,2040,ACCESS-CM2,,r_huss,0.0,0.0,12
+post_serialization,London,ssp245,2040,ACCESS-CM2,,r_pr,0.0,0.0,12
+post_serialization,London,ssp245,2040,ACCESS-CM2,,r_wind,0.0,0.0,12
+post_serialization,Madrid,ssp245,2040,ACCESS-CM2,,d_clt,0.0,0.0,12
+post_serialization,Madrid,ssp245,2040,ACCESS-CM2,,d_psl_pa,0.0,0.0,12
+post_serialization,Madrid,ssp245,2040,ACCESS-CM2,,d_rlds,0.0,0.0,12
+post_serialization,Madrid,ssp245,2040,ACCESS-CM2,,d_rsds,0.0,0.0,12
+post_serialization,Madrid,ssp245,2040,ACCESS-CM2,,d_tas,0.0,0.0,12
+post_serialization,Madrid,ssp245,2040,ACCESS-CM2,,d_tasmax,0.0,0.0,12
+post_serialization,Madrid,ssp245,2040,ACCESS-CM2,,d_tasmin,0.0,0.0,12
+post_serialization,Madrid,ssp245,2040,ACCESS-CM2,,r_huss,0.0,0.0,12
+post_serialization,Madrid,ssp245,2040,ACCESS-CM2,,r_pr,0.0,0.0,12
+post_serialization,Madrid,ssp245,2040,ACCESS-CM2,,r_wind,0.0,0.0,12
+post_serialization,Singapore,ssp245,2040,ACCESS-CM2,,d_clt,0.0,0.0,12
+post_serialization,Singapore,ssp245,2040,ACCESS-CM2,,d_psl_pa,0.0,0.0,12
+post_serialization,Singapore,ssp245,2040,ACCESS-CM2,,d_rlds,0.0,0.0,12
+post_serialization,Singapore,ssp245,2040,ACCESS-CM2,,d_rsds,0.0,0.0,12
+post_serialization,Singapore,ssp245,2040,ACCESS-CM2,,d_tas,0.0,0.0,12
+post_serialization,Singapore,ssp245,2040,ACCESS-CM2,,d_tasmax,0.0,0.0,12
+post_serialization,Singapore,ssp245,2040,ACCESS-CM2,,d_tasmin,0.0,0.0,12
+post_serialization,Singapore,ssp245,2040,ACCESS-CM2,,r_huss,0.0,0.0,12
+post_serialization,Singapore,ssp245,2040,ACCESS-CM2,,r_pr,0.0,0.0,12
+post_serialization,Singapore,ssp245,2040,ACCESS-CM2,,r_wind,0.0,0.0,12
+post_serialization,Sydney,ssp245,2040,ACCESS-CM2,,d_clt,0.0,0.0,12
+post_serialization,Sydney,ssp245,2040,ACCESS-CM2,,d_psl_pa,0.0,0.0,12
+post_serialization,Sydney,ssp245,2040,ACCESS-CM2,,d_rlds,0.0,0.0,12
+post_serialization,Sydney,ssp245,2040,ACCESS-CM2,,d_rsds,0.0,0.0,12
+post_serialization,Sydney,ssp245,2040,ACCESS-CM2,,d_tas,0.0,0.0,12
+post_serialization,Sydney,ssp245,2040,ACCESS-CM2,,d_tasmax,0.0,0.0,12
+post_serialization,Sydney,ssp245,2040,ACCESS-CM2,,d_tasmin,0.0,0.0,12
+post_serialization,Sydney,ssp245,2040,ACCESS-CM2,,r_huss,0.0,0.0,12
+post_serialization,Sydney,ssp245,2040,ACCESS-CM2,,r_pr,0.0,0.0,12
+post_serialization,Sydney,ssp245,2040,ACCESS-CM2,,r_wind,0.0,0.0,12
+post_serialization,Toronto,ssp245,2040,ACCESS-CM2,,d_clt,0.0,0.0,12
+post_serialization,Toronto,ssp245,2040,ACCESS-CM2,,d_psl_pa,0.0,0.0,12
+post_serialization,Toronto,ssp245,2040,ACCESS-CM2,,d_rlds,0.0,0.0,12
+post_serialization,Toronto,ssp245,2040,ACCESS-CM2,,d_rsds,0.0,0.0,12
+post_serialization,Toronto,ssp245,2040,ACCESS-CM2,,d_tas,0.0,0.0,12
+post_serialization,Toronto,ssp245,2040,ACCESS-CM2,,d_tasmax,0.0,0.0,12
+post_serialization,Toronto,ssp245,2040,ACCESS-CM2,,d_tasmin,0.0,0.0,12
+post_serialization,Toronto,ssp245,2040,ACCESS-CM2,,r_huss,0.0,0.0,12
+post_serialization,Toronto,ssp245,2040,ACCESS-CM2,,r_pr,0.0,0.0,12
+post_serialization,Toronto,ssp245,2040,ACCESS-CM2,,r_wind,0.0,0.0,12

@@ -1,0 +1,58 @@
+name: Windows Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v1.0.0"
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install Python dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt -r requirements-dev.txt
+      - name: Run application tests
+        shell: pwsh
+        run: |
+          python app.py --self-test
+          python -m pytest -q tests
+      - name: Build PyInstaller onedir app
+        shell: pwsh
+        run: .\scripts\build_windows.ps1 -SkipInstall
+      - name: Install Inno Setup
+        shell: pwsh
+        run: choco install innosetup -y --no-progress
+      - name: Build installer
+        shell: pwsh
+        run: .\scripts\build_installer.ps1 -SkipAppBuild
+      - name: Create SHA-256
+        shell: pwsh
+        run: |
+          $f = "release\FutureEPWGenerator_Setup_v1.0.0.exe"
+          $h = (Get-FileHash $f -Algorithm SHA256).Hash.ToLower()
+          "$h  FutureEPWGenerator_Setup_v1.0.0.exe" | Set-Content "release\FutureEPWGenerator_Setup_v1.0.0.exe.sha256" -Encoding ascii
+      - uses: actions/upload-artifact@v4
+        with:
+          name: FutureEPWGenerator-v1.0.0-Windows
+          path: |
+            release/FutureEPWGenerator_Setup_v1.0.0.exe
+            release/FutureEPWGenerator_Setup_v1.0.0.exe.sha256
+      - name: Publish GitHub Release assets
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            release/FutureEPWGenerator_Setup_v1.0.0.exe
+            release/FutureEPWGenerator_Setup_v1.0.0.exe.sha256
